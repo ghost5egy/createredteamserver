@@ -5,4 +5,4 @@ beef-xss
 apache2
 to use just 
 
-wget | bash
+wget https://raw.githubusercontent.com/ghost5egy/createredteamserver/master/install.sh | bash
