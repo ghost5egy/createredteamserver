@@ -6,3 +6,6 @@ sudo apt-key add archive-key.asc
 apt update && sudo apt full-upgrade -y
 apt install powershell-empire beef-xss apache2 -y 
 apt update; apt install git -y; git clone https://github.com/mhaskar/Octopus/ /opt/Octopus; cd /opt/Octopus/; apt install python3-pip -y ; export LC_ALL=C ;  pip3 install -r requirements.txt;apt install mono-devel -y
+mv /var/www/html/index.html /var/www/html/index.html.bak
+echo "it's working" >> /var/www/html/index.html
+reboot
