@@ -1,5 +1,5 @@
 apt update && sudo apt upgrade -y
-apt install gnupg
+apt install git curl gnupg -y
 #echo 'deb https://http.kali.org/kali kali-rolling main non-free contrib' > /etc/apt/sources.list.d/kali.list
 #wget 'https://archive.kali.org/archive-key.asc'
 #sudo apt-key add archive-key.asc
