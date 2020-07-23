@@ -8,7 +8,7 @@ git clone https://github.com/BC-SECURITY/Empire.git
 cd /opt/Empire/setup/
 bash install.sh
 echo "cd /opt/Empire;python3 empire" > /usr/bin/empire
-chmod +x /use/bin/empire
+chmod +x /usr/bin/empire
 apt install xfce4 xfce4-goodies -y
 apt install tightvncserver -y
 #apt install beef-xss -y
