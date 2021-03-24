@@ -27,6 +27,6 @@ apt install mingw-w64 mono-devel -y
 cd /opt
 git clone https://github.com/mhaskar/Octopus/
 cd Octopus
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 echo "cd /opt/Octopus;./octopus.py" >> /usr/bin/octopus
 chmod +x /usr/bin/octopus
